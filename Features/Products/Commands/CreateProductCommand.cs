@@ -30,7 +30,7 @@ public sealed class CreateCategoryHandler(IProductRepository repository) : IRequ
     {
         var category = new Categories
         {
-            Category_Name = request.Category_Name,
+            Category_Name =  request.Category_Name,
             Description = request.Description,
             CreatedAt = DateTime.Now
         };
