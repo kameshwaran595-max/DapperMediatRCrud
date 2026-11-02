@@ -18,7 +18,7 @@ public sealed class CreateProductHandler(IProductRepository repository) : IReque
             CreatedAt = DateTime.Now
         };
 
-        return await repository.CreateAsync(product, cancellationToken);
+        return await repository.CreateAsync(product,  cancellationToken);
     }
 }
 
